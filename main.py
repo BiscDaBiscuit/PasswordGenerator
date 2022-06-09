@@ -38,10 +38,12 @@ class PasswordGen:
     sleep(1)
     self.slowType("\n\nInput how many passwords you would like to generate!\n")
 
-    num = int(input('Amount Of Passwords: '))
+    print(Fore.GREEN)
+    num = int(input('Amount of Passwords: '))
 
-    self.slowType("\n\nHow long would you like your passwords to be?? (Recommendation: 17)\n")
-    print()
+    print(Fore.BLUE)
+    self.slowType("How long would you like your passwords to be?? (Recommendation: 17)\n")
+    print(Fore.GREEN)
     plen = int(input("Length of Passwords: "))
     print(Fore.RED)
     for i in range(num):
@@ -49,3 +51,4 @@ class PasswordGen:
 
 if __name__ == '__main__':
   PasswordGen()
+  
